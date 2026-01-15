@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Cafe Soda & Gola - Refreshing Drinks & Tasty Golas!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8e1; /* Light yellow background */
+            color: #333;
+        }
+        header {
+            background-color: #ff9800; /* Orange header */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffb74d; /* Lighter orange */
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x600/4caf50/ffffff?text=Refreshing+Drinks+and+Golas'); /* Placeholder for vibrant image */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            background-color: #ff5722; /* Bright red-orange */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #e64a19;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about, .menu, .reviews, .contact {
+            margin-bottom: 40px;
+        }
+        .about {
+            background-color: #e8f5e8; /* Light green */
+            border-radius: 10px;
+        }
+        .menu {
+            background-color: #fff3e0; /* Light orange */
+            border-radius: 10px;
+        }
+        .menu-preview {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .menu-item {
+            width: 30%;
+            text-align: center;
+            margin: 10px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .reviews {
+            background-color: #f3e5f5; /* Light purple */
+            border-radius: 10px;
+        }
+        .rating {
+            text-align: center;
+            font-size: 2em;
+            color: #ff9800;
+        }
+        .review {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .contact {
+            background-color: #e3f2fd; /* Light blue */
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #ff9800;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .footer-button {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .menu-preview {
+                flex-direction: column;
+            }
+            .menu-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ansh Cafe Soda & Gola</h1>
+        <p>4.8★ (71 reviews) | Delicious Sodas, Golas & Snacks for ₹1–200 per person</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h1>Refreshing Drinks & Tasty Golas!</h1>
+        <a href="#" class="cta-button">Order Online</a>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Ansh Cafe Soda & Gola, we offer a fun, friendly atmosphere for a quick refresh. Indulge in our delicious sodas, golas, and snacks that keep you coming back for more!</p>
+    </section>
+    <section id="menu" class="menu">
+        <h2>Menu Preview</h2>
+        <div class="menu-preview">
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200/4caf50/ffffff?text=Sodas" alt="Sodas">
+                <h3>Sodas</h3>
+                <p>Refreshing carbonated drinks in various flavors.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200/ff9800/ffffff?text=Golas" alt="Golas">
+                <h3>Golas</h3>
+                <p>Tasty shaved ice treats with syrups and toppings.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200/2196f3/ffffff?text=Snacks" alt="Snacks">
+                <h3>Snacks</h3>
+                <p>Delicious bites to pair with your drinks.</p>
+            </div>
+        </div>
+    </section>
+    <section id="reviews" class="reviews">
+        <h2>Reviews</h2>
+        <div class="rating">4.8★ (71 reviews)</div>
+        <div class="review">
+            <p>"Amazing golas! The flavors are spot on and the place is so vibrant. Highly recommend!" - Priya S.</p>
+        </div>
+        <div class="review">
+            <p>"Best sodas in town. Friendly staff and quick service. Perfect for a quick refresh." - Rahul M.</p>
+        </div>
+        <div class="review">
+            <p>"Loved the snacks! Affordable and delicious. Will visit again." - Anjali K.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>WhatsApp: <a href="https://wa.me/919011046386">090110 46386</a></p>
+        <p>Address: Shop no 1, opp. Satish Trading co, Dehu Phata</p>
+        <p><a href="https://maps.google.com/?q=Shop+no+1,+opp.+Satish+Trading+co,+Dehu+Phata" target="_blank">View on Map</a></p>
+    </section>
+    <footer>
+        <p>Open till 11 pm</p>
+        <div class="footer-buttons">
+            <a href="tel:09011046386" class="footer-button">Call Now</a>
+            <a href="https://maps.google.com/?q=Shop+no+1,+opp.+Satish+Trading+co,+Dehu+Phata" class="footer-button">Get Directions</a>
+        </div>
+    </footer>
+</body>
+</html>
